@@ -1,17 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 //Custom Components
@@ -54,6 +48,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { ProfileSectionComponent } from './profile-section/profile-section.component';
 //
 
 
@@ -62,9 +57,10 @@ import {MatTreeModule} from '@angular/material/tree';
     AppComponent,
     TweetCreateComponent,
     PostComponent,
-    TrendComponent
+    TrendComponent,
     SideNavComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    ProfileSectionComponent
   ],
   imports: [
     //Ng Modules
@@ -109,7 +105,7 @@ import {MatTreeModule} from '@angular/material/tree';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule
+    MatTreeModule,
     //
     LayoutModule,
     MatToolbarModule,
